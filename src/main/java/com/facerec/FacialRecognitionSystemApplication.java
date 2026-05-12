@@ -12,7 +12,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class FacialRecognitionSystemApplication {
     public static void main(String[] args) {
-        nu.pattern.OpenCV.loadLocally();
+        // Line removed! JavaCV will auto-load the native libraries for us.
         SpringApplication.run(FacialRecognitionSystemApplication.class, args);
     }
 }
